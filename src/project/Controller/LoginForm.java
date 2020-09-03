@@ -1,4 +1,4 @@
-package project.controllers;
+package project.Controller;
 
-public class LoginFormController {
+public class LoginForm {
 }
