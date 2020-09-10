@@ -1,6 +1,0 @@
-.body{
-    -fx-background-color: white;
-    -fx-background-radius: 5.0;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2),8.0,0.5,0.0,1);
-    -fx-padding: 10 10 10 10;
-}

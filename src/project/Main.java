@@ -9,21 +9,13 @@ import javafx.stage.StageStyle;
 
 public class Main extends Application {
 private double x=0, y=0;
+public static Stage stage =null;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("View/FXML/LoginForm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("View/LoginForm.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        root.setOnMousePressed(event -> {
-            x = event.getSceneX();
-            y = event.getSceneY();
-        });
-
-        root.setOnMouseDragged(event -> {
-            primaryStage.setX(event.getScreenX() - x);
-            primaryStage.setY(event.getScreenY() - y);
-        });
-
+        this.stage=primaryStage;
         primaryStage.show();
     }
 
